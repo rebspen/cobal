@@ -1,0 +1,36 @@
+.teambox {
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
+  box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
+  width: 45%;
+  margin: 2%;
+  color: grey;
+}
+
+.team-img{
+  background-image: url("/img-cut-landing.png");
+  height: 5em;
+  width: 5em;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  border-radius: 180px;
+}
+
+.team-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #5851ea;
+}
+
+.team-title{
+  margin-left: -10em;
+}
+
+.team-details{
+  padding: 0.5em 1em; 
+}
+
+.icons {
+  float: left;
+}

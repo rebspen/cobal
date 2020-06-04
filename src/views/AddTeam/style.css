@@ -1,14 +1,14 @@
-.team{
+.add-employee{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#5851ea ;
+  color:#5851ea;
   margin: 5em 5em;
 }
 
-.team-list{
-  width:100%;
-  display: flex;
-  flex-wrap: wrap;
+.employee-form{
+  width: 100%
 }
+
+
 

@@ -5,16 +5,13 @@ import Team from "./views/Team";
 import AddTeam from "./views/AddTeam";
 import Nav from "./components/Nav/index";
 import Footer from "./components/Footer/index";
-import team from "./team.json";
+import teams from "./team.json";
 
 function App() {
   const [team, setTeam] = useState(null);
 
   useEffect(() => {
-    setTeam(team);
-    return () => {
-      console.log("unmounted")
-    }
+    setTeam(teams);
   }, [team]);
 
   return (
@@ -23,8 +20,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/team" render={(props)=> <Team team={team} />}/>
-          <Route path="/new-employee" render={(props)=> <AddTeam setTeam={setTeam} />}/>
+          <Route path="/team" render={(props)=> <Team  {...props} team={team} />}/>
+          <Route path="/new-employee" render={(props)=> <AddTeam {...props} setTeam={setTeam} />}/>
         </Switch>
         <Footer />
       </BrowserRouter>

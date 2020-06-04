@@ -1,13 +1,16 @@
 import React from 'react'
 import TeamBox from '../../components/TeamBox'
+import './style.css'
 
-
-const Team = (props) => {
-  console.log(props)
-  return (
-    <div>
+const Team = ({team}) => {
+  return team && (
+    <div className="team">
       <h1>Team</h1>
-      <TeamBox/>
+      <div className="team-list">
+      {team.map(val => {
+        return <TeamBox data={val}/>
+      })}
+      </div>
     </div>
   )
 }
