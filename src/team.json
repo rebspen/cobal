@@ -1,0 +1,30 @@
+[
+  {"name": "John Doe",
+    "image": "",
+    "id": "1",
+    "Birthdate": "/images/bolcom.png",
+    "Address": "1, apple lane",
+    "Status": "full-time",
+    "Created": "10th May 2019",
+    "Updated":"10th Janury 2020"
+  },
+  {"name": "John Doe",
+    "image": "",
+    "id": "2",
+    "Birthdate": "/images/bolcom.png",
+    "Address": "1, apple lane",
+    "Status": "full-time",
+    "Created": "10th May 2019",
+    "Updated":"10th Janury 2020"
+  },
+  {"name": "John Doe",
+    "image": "",
+    "id": "3",
+    "Birthdate": "/images/bolcom.png",
+    "Address": "1, apple lane",
+    "Status": "full-time",
+    "Created": "10th May 2019",
+    "Updated":"10th Janury 2020"
+  }
+
+]

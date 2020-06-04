@@ -1,0 +1,42 @@
+
+.footer{
+  background-color: #5851ea ;
+  color: white;
+  padding: 0em 12vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-top{
+  padding: 1em 1em 3em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+
+.footer-part{
+  width:20%; 
+}
+
+.footer-part > p {
+  font-size: 0.7em;
+  margin: 0.5em 0;
+}
+
+.lead{
+  width:40%
+}
+
+.lead > p{
+margin-right:14vw ;
+}
+
+.footer-bottom{
+  font-size: 0.7em;
+  margin-top: 3em;
+}
+
