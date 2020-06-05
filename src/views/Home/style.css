@@ -1,34 +1,34 @@
-.header-img{
-  height: 88vh;
+.header-img {
+  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: larger;
-  text-align: center;
   background-image: url("/img-cut-landing.png");
-  background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header{
+.header {
   background-color: #5851ea;
 }
 
-.main-home{
+.main-home {
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 0.8em;
   margin: 4em 0;
+  color: #6f7982;
+  line-height: 2;
 }
-.landing{
-  width: 40%
+.landing {
+  width: 40%;
 }
 
-.aug-text{
+.aug-text {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -36,10 +36,28 @@
   align-items: flex-start;
 }
 
-.augment{
+.augment {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   padding: 2em 5em;
   text-align: start;
   justify-content: space-around;
+}
+
+.margin-bottom {
+  margin-bottom: 9em;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  color: #1a264a;
+}
+
+.single-line{
+  align-self: center;
+  margin: 3em 0 0.7em 0;
 }

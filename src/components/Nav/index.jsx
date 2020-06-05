@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import Button from "../Button";
 
-const Nav = ({ button }) => {
+const Nav = ({ button, colour}) => {
   return (
-    <div className="nav">
+    <div className="nav" style= {{backgroundColor: colour}}>
       <input type="checkbox" id="nav-check" />
 
       <div className="nav-header">

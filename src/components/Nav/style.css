@@ -30,8 +30,9 @@
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 0.9em;
+  font-size: 14px;
   margin-top: 0.8em;
+  margin-right: 6vw ;
 }
 
 .nav > .nav-links > .nav-link {
@@ -39,7 +40,7 @@
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
-  margin-right: 3vw;
+  margin-right: 2vw;
 }
 
 .nav > #nav-check {

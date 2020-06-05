@@ -6,7 +6,7 @@ import './style.css'
 const Team = ({team, updatePerson, deletePerson}) => {
   return team && (
     <Fragment>
-     <Nav button={true} />
+     <Nav button={true} colour={"#5851ea"} />
     <div className="team">
       <h1>Team</h1>
       <div className="team-list">

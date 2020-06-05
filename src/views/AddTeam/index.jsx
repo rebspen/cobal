@@ -17,7 +17,7 @@ const AddTeam = ({ addPerson }) => {
 
   return (
     <Fragment>
-    <Nav button={true} />
+    <Nav button={true} colour={"#5851ea"} />
     <div className="add-employee">
       <h1>New Employee</h1>
       <div className="employee-form">

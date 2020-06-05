@@ -8,26 +8,28 @@ const Home = () => {
     <div>
       <div className="header">
         <section className="header-img">
-          <Nav button={false} />
+          <Nav button={false} colour={"transparent"} />
           <h1>
             Make Your Team <br></br>the best it can be
           </h1>
-          <Button>Enter</Button>
+          <Button className="margin-bottom">Enter</Button>
         </section>
       </div>
       <section className="main-home">
+      <img className="single-line" src="./single-line.png" alt="" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br></br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div className="augment">
           <img className="landing" src = "./img-landing.png" alt=""/>
           <div className="aug-text">
             <h2>Augmented reality</h2>
+            <img src="./double-line.png" alt="" />
             <p>
               Duis autre irure dolor in reprehenferit in volupulate vliet esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidadyay no proident, sunt in culpa qui officia deserunt mollit
               anim id est laborumn.
             </p>
-            <Button primary>LEARN MORE</Button>
+            <Button small primary>LEARN MORE</Button>
           </div>
         </div>
       </section>
