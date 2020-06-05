@@ -5,8 +5,9 @@ const HalfInput = ({ name, tag, updatePerson }) => {
   const [text, setText] = useState("");
 
   const handleChange = async (e) => {
+    const val = e.target.value
     await setText(e.target.value);
-    updatePerson(tag, text);
+    updatePerson(tag, val);
   };
 
   return (
