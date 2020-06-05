@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color:#5851ea;
-  margin: 5em 5em;
+  margin: 12vw 5em;
 }
 
 .employee-form{
@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  margin-top: 6vw;
 }
 
 .half-size{
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 6vw;
 }
 
 

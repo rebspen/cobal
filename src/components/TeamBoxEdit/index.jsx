@@ -7,6 +7,7 @@ import TeamBoxInput from "../TeamBoxInput"
 
 const TeamBoxEdit = ({ data, updatePerson, leaveEditMode}) => {
   const [person, setPerson] = useState(data);
+ 
 
   const updatePersonHere = async (tag, value) => {
     await setPerson((prevState) => ({
@@ -16,31 +17,31 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode}) => {
   };
 
 const updatePersonGlobally = async () => {
+  console.log("now we are at person", person)
   await updatePerson(person)
   leaveEditMode()
 }
 
   return (
     person && (
-      <div className="teambox">
-        <div className="team-header">
-          <div className="team-img"></div>
-          <div className="team-title">
+      <div className="edit-teambox">
+        <div className="edit-team-header">
+          <div className="edit-team-img"></div>
+          <div className="edit-team-title">
            <TeamBoxInput name="Name:" tag="name" updatePerson={updatePersonHere} data={person.name}  />
-           <TeamBoxInput name="Employee ID:" tag="id" updatePerson={updatePersonHere} data={person.id}  />
+           <p>Employee ID: {person.id}</p>
           </div>
           <div className="icons">
-          <button onClick={()=> updatePersonGlobally()}><GoCheck size={30} /></button>
+          <button className="hidden" onClick={()=> updatePersonGlobally()}><GoCheck color={"#a1a0ae"}  size={30} /></button>
           </div>
         </div>
-        <div className="team-details">
+        <div className="edit-team-details">
         <TeamBoxInput name="Birthdate: " tag="birthdate" updatePerson={updatePersonHere} data={person.birthdate}  />
         <TeamBoxInput name="Address: " tag="address" updatePerson={updatePersonHere} data={person.address}  />
         <TeamBoxInput name="Status :" tag="status" updatePerson={updatePersonHere} data={person.status}  />
         <TeamBoxInput name="Position:" tag="position" updatePerson={updatePersonHere} data={person.position}  />
         <TeamBoxInput name="Created:" tag="created" updatePerson={updatePersonHere} data={person.created}  />
         <TeamBoxInput name="Updated:" tag="updated" updatePerson={updatePersonHere} data={person.updated}  />
-          <p>Updated: {data.updated}</p>
         </div>
       </div>
     )

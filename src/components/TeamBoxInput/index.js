@@ -5,13 +5,10 @@ const TeamBoxInput = ({ name, tag, updatePerson, data }) => {
   const [text, setText] = useState(data);
 
   const handleChange = async (e) => {
+    const val = e.target.value
     await setText(e.target.value);
-    handleSubmit()
+    updatePerson(tag, val); 
   };
-
-  const handleSubmit = () => {
-    updatePerson(tag, text);
-  }
 
   return (
     <div className="team-input-main">

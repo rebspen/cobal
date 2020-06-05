@@ -4,7 +4,11 @@
   box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
   width: 45%;
   margin: 2%;
-  color: grey;
+  color: #a1a0ae;
+}
+
+.name{
+  color: #4d4f5c;
 }
 
 .team-img{
@@ -29,6 +33,10 @@
 
 .team-details{
   padding: 0.5em 1em; 
+}
+
+.team-details > p > span {
+  font-size: smaller;
 }
 
 .icons {

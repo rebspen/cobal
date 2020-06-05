@@ -15,6 +15,8 @@ const AddTeam = ({ addPerson }) => {
     }));
   };
 
+  
+
   return (
     <Fragment>
     <Nav button={true} colour={"#5851ea"} />

@@ -10,7 +10,10 @@ const Nav = ({ button, colour}) => {
 
       <div className="nav-header">
         <div className="nav-title">
-          <img className="branding" src="./logo.png" alt="" />
+        <Link to={`/`}>
+        <img className="branding" src="./logo.png" alt="" />
+        </Link>
+          
         </div>
       </div>
 

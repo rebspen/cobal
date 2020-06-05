@@ -15,7 +15,7 @@ function App() {
   },[]);
 
   const addPerson = (person) => {
-    setTeam(team => [...team, person])
+    setTeam(team => [...team, person]);
   };
 
   const updatePerson = (person) => {

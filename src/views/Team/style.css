@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   color:#5851ea ;
-  margin: 5em 5em;
+  margin: 12vw 5em;
 }
 
 .team-list{
   width:100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 6vw;
 }
 

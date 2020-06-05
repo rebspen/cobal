@@ -24,23 +24,23 @@ const TeamBox = ({ data, updatePerson, deletePerson }) => {
         <div className="team-header">
           <div className="team-img"></div>
           <div className="team-title">
-            <h4>
+            <h4 className= "name">
               <strong>{data.name}</strong>
             </h4>
             <p>Employee ID: {data.id}</p>
           </div>
           <div className="icons">
-           <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={30} /></button> 
-            <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={35} /></button>
+           <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={20} color={"#a1a0ae"} /></button> 
+            <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={33}  color={"#a1a0ae"}  style={{paddingTop:"1em"}}/></button>
           </div>
         </div>
         <div className="team-details">
-          <p>Birthdate: {data.birthdate}</p>
-          <p>Address: {data.address}</p>
-          <p>Status: {data.status}</p>
-          <p>Position: {data.position}</p>
-          <p>Created: {data.created}</p>
-          <p>Updated: {data.updated}</p>
+          <p>Birthdate: <span>{data.birthdate}</span></p>
+          <p>Address: <span>{data.address}</span></p>
+          <p>Status: <span>{data.status}</span></p>
+          <p>Position: <span>{data.position}</span></p>
+          <p>Created: <span>{data.created}</span></p>
+          <p>Updated: <span>{data.updated}</span></p>
         </div>
       </div>
     ) : <TeamBoxEdit data={data} leaveEditMode={leaveEditMode} updatePerson={updatePerson} />
