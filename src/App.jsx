@@ -19,11 +19,14 @@ function App() {
   };
 
   const updatePerson = (person) => {
-   //filter to find id 
+   console.log("app person update", person)
+   setTeam(team.map((teammember) => {
+    return teammember.id === person.id ? person : teammember;
+  }));
   };
 
   const deletePerson = (person) => {
-    //filter to find id 
+    setTeam(team.filter((teammember) => teammember.id !== person.id));
    };
 
   console.log("team", team)
@@ -33,7 +36,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/team" render={(props)=> <Team  {...props} team={team} />}/>
+          <Route path="/team" render={(props)=> <Team  {...props} team={team} updatePerson={updatePerson} deletePerson={deletePerson}/>}/>
           <Route path="/new-employee" render={(props)=> <AddTeam {...props} addPerson={addPerson} />}/>
         </Switch>
         <Footer />

@@ -34,3 +34,9 @@
 .icons {
   float: left;
 }
+
+.hidden{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

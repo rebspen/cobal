@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import "./style.css";
 
 const AddTeam = ({ addPerson }) => {
-  const [person, setPerson] = useState({});
+  const [person, setPerson] = useState({image: "/images/bolcom.png"});
 
   const updatePerson = async (tag, value) => {
     await setPerson((prevState) => ({

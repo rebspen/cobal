@@ -1,0 +1,12 @@
+.team-input-main{
+  display: flex;
+  padding : 0 1em;
+  width: 70%;
+}
+
+.team-input-body{
+  border: none;
+  margin: 1em;
+  outline: none;
+  width: 70%;
+}

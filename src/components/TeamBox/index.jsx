@@ -1,11 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 import { GoPencil, GoX } from "react-icons/go";
 import { Link } from "react-router-dom";
+import TeamBoxEdit from '../TeamBoxEdit'
 
-const TeamBox = ({ data }) => {
+const TeamBox = ({ data, updatePerson, deletePerson }) => {
+  const [editMode, setEditMode] = useState(false)
+
+  // const updatePerson = async (tag, value) => {
+  //   await setPerson((prevState) => ({
+  //     ...prevState,
+  //     [tag]: value,
+  //   }));
+  // };
+
+  const leaveEditMode = () =>{
+    setEditMode(false)
+  }
+
   return (
-    data && (
+    data && !editMode ? (
       <div className="teambox">
         <div className="team-header">
           <div className="team-img"></div>
@@ -16,8 +30,8 @@ const TeamBox = ({ data }) => {
             <p>Employee ID: {data.id}</p>
           </div>
           <div className="icons">
-            <GoPencil size={30} />
-            <GoX size={35} />
+           <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={30} /></button> 
+            <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={35} /></button>
           </div>
         </div>
         <div className="team-details">
@@ -29,7 +43,7 @@ const TeamBox = ({ data }) => {
           <p>Updated: {data.updated}</p>
         </div>
       </div>
-    )
+    ) : <TeamBoxEdit data={data} leaveEditMode={leaveEditMode} updatePerson={updatePerson} />
   );
 };
 
