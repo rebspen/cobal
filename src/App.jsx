@@ -12,8 +12,21 @@ function App() {
 
   useEffect(() => {
     setTeam(teams);
-  }, [team]);
+  },[]);
 
+  const addPerson = (person) => {
+    setTeam(team => [...team, person])
+  };
+
+  const updatePerson = (person) => {
+   //filter to find id 
+  };
+
+  const deletePerson = (person) => {
+    //filter to find id 
+   };
+
+  console.log("team", team)
   return (
     <div>
       <BrowserRouter>
@@ -21,7 +34,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/team" render={(props)=> <Team  {...props} team={team} />}/>
-          <Route path="/new-employee" render={(props)=> <AddTeam {...props} setTeam={setTeam} />}/>
+          <Route path="/new-employee" render={(props)=> <AddTeam {...props} addPerson={addPerson} />}/>
         </Switch>
         <Footer />
       </BrowserRouter>
