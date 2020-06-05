@@ -2,8 +2,10 @@
   height: 12vh;
   width: 100%;
   background-color: #5851ea;
-  position: relative;
-  padding: 0em 12vw
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5vw 0 12vw;
 }
 
 .nav > .nav-header {
@@ -16,31 +18,35 @@
 }
 
 .nav > .nav-header > .nav-title > .branding {
-  width: 6em
+  width: 6em;
+  margin-top: 0.7em;
 }
 
 .nav > .nav-btn {
   display: none;
+  margin-top: 0.6em;
 }
 
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 0.9em;
+  margin-top: 0.8em;
 }
 
-.nav > .nav-links > a {
+.nav > .nav-links > .nav-link {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
+  margin-right: 3vw;
 }
 
 .nav > #nav-check {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:765px) {
   .nav{
    padding: none 
   }
@@ -75,7 +81,7 @@
     left: 0px;
     text-align: center;
   }
-  .nav > .nav-links > a {
+  .nav > .nav-links > .nav-link {
     display: block;
     width: 100%;
   }
@@ -83,7 +89,7 @@
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: 180px;
+    height: 200px;
     overflow-y: auto;
   }
 }

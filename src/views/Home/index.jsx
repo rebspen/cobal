@@ -1,12 +1,14 @@
 import React from "react";
 import Button from "../../components/Button/index";
 import "./style.css";
+import Nav from "../../components/Nav"
 
 const Home = () => {
   return (
     <div>
       <div className="header">
         <section className="header-img">
+          <Nav button={false} />
           <h1>
             Make Your Team <br></br>the best it can be
           </h1>

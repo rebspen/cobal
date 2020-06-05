@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import TeamBox from '../../components/TeamBox'
+import Nav from "../../components/Nav"
 import './style.css'
 
 const Team = ({team, updatePerson, deletePerson}) => {
   return team && (
+    <Fragment>
+     <Nav button={true} />
     <div className="team">
       <h1>Team</h1>
       <div className="team-list">
@@ -12,6 +15,7 @@ const Team = ({team, updatePerson, deletePerson}) => {
       })}
       </div>
     </div>
+    </Fragment>
   )
 }
 

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Input from "../../components/Input";
 import HalfInput from "../../components/HalfInput";
 import Button from "../../components/Button";
 import "./style.css";
+import Nav from '../../components/Nav'
 
 const AddTeam = ({ addPerson }) => {
   const [person, setPerson] = useState({image: "/images/bolcom.png"});
@@ -15,6 +16,8 @@ const AddTeam = ({ addPerson }) => {
   };
 
   return (
+    <Fragment>
+    <Nav button={true} />
     <div className="add-employee">
       <h1>New Employee</h1>
       <div className="employee-form">
@@ -33,6 +36,7 @@ const AddTeam = ({ addPerson }) => {
         </Button>
       </div>
     </div>
+    </Fragment>
   );
 };
 

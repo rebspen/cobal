@@ -33,7 +33,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/team" render={(props)=> <Team  {...props} team={team} updatePerson={updatePerson} deletePerson={deletePerson}/>}/>

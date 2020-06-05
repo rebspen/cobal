@@ -1,40 +1,49 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
+import Button from "../Button";
 
-
-
-const Nav = () => {
+const Nav = ({ button }) => {
   return (
-<div className="nav">
+    <div className="nav">
+      <input type="checkbox" id="nav-check" />
 
-  <input type="checkbox" id="nav-check"/>
+      <div className="nav-header">
+        <div className="nav-title">
+          <img className="branding" src="./logo.png" alt="" />
+        </div>
+      </div>
 
-  <div className="nav-header">
-    <div className="nav-title">
-      <img className="branding" src = "./logo.png" alt= ""/>
+      <div className="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div className="nav-links">
+        <Link className="nav-link" to={`/`}>
+          Home
+        </Link>
+        <Link className="nav-link" to={`#`}>
+          Absenses
+        </Link>
+        <Link className="nav-link" to={`/team`}>
+          Employees
+        </Link>
+        {button && (
+          <Link
+            className="nav-link"
+            style={{ padding: "7px 4px 7px 4px" }}
+            to={`/new-employee`}
+          >
+            <Button small>New Employee</Button>
+          </Link>
+        )}
+      </div>
     </div>
-  </div>
+  );
+};
 
-  <div className="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-  
-  <div className="nav-links">
-    <a href="//github.io/jo_geek" target="_blank">Home</a>
-    <a href="http://stackoverflow.com/users/4084003/" target="_blank">Absences</a>
-    <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Employees</a>
-  </div>
-
-</div>
-
-  )
-}
-
-
-export default Nav
-
-
+export default Nav;
