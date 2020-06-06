@@ -13,3 +13,13 @@
   outline: none;
   width: 70%;
 }
+
+@media only screen and (max-width: 775px) {
+  .input-main{
+    width:90%
+  }
+
+  .input-body{
+    width: 60%;
+  }
+}

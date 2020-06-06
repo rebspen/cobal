@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color:#5851ea;
-  margin: 12vw 5em;
+  margin: 8em 5em;
 }
 
 .employee-form{
@@ -23,5 +23,32 @@
   margin-bottom: 6vw;
 }
 
+.sq-1{
+  top: 20%;
+  left: 13%;
+}
 
+.sq-2{
+  top: 40%;
+  left: 87%;
+  transform: rotate(180deg)
+}
 
+@media only screen and (max-width: 850px) {
+  .half-size{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+  }
+  .add-employee{
+    margin: 7em 0;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
+  .half-size{
+    width: 100%;
+  }
+}

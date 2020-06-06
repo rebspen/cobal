@@ -13,3 +13,13 @@
   outline: none;
   width : 50%;
 }
+
+@media only screen and (max-width: 850px) {
+  .half-main{
+    width: 90%;
+  }
+
+  .half-body{
+    width: 60%;
+  }
+}

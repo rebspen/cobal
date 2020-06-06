@@ -61,3 +61,34 @@ h2 {
   align-self: center;
   margin: 3em 0 0.7em 0;
 }
+
+.circle{
+  top: 170%;
+  left: 88%;
+  z-index: -1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header-img{
+    background-position: 35% 30%
+  }
+  .augment {
+    flex-direction: column;
+    padding : 0;
+    align-items: center ;
+  }
+  
+  .landing {
+    width: 70%;
+  }
+
+  .aug-text {
+    width: 70%;
+  }
+
+  .small-text{
+    margin: 0 1em;
+  }
+
+}

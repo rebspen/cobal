@@ -82,6 +82,7 @@
     top: 50px;
     left: 0px;
     text-align: center;
+    z-index: 1;
   }
   .nav > .nav-links > .nav-link {
     display: block;

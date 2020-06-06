@@ -2,13 +2,14 @@
   -webkit-box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
   box-shadow: 2px 3px 5px 0px rgba(235, 235, 235, 1);
-  width: 45%;
-  margin: 2%;
+  min-width: 340px;
+  margin: 1.5%;
+  width: 47%;
   color: #a1a0ae;
 }
 
 .edit-team-title{
-  margin-left: -5vw;
+  margin-left: 1em;
 }
 
 .edit-team-img{
@@ -27,8 +28,22 @@
   border-bottom: 1px solid #5851ea;
 }
 
+.edit-head-info{
+  width:85%;
+  display: flex;
+}
+
 .edit-team-details{
   padding: 0.5em 1em; 
+}
+
+
+@media only screen and (max-width: 873px) {
+  .edit-teambox{
+    width:97%;
+    min-width: 140px;
+  }
+
 }
 
 

@@ -18,14 +18,54 @@ const AddTeam = ({ addPerson, history }) => {
   };
 
   const submit = async () => {
-    await addPerson(person)
-    history.goBack()
-  }
+    await addPerson(person);
+    history.goBack();
+  };
 
   return (
     <Fragment>
       <Nav button={true} colour={"#5851ea"} />
       <div className="add-employee">
+        {/* <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          width="78"
+          height="77"
+          viewBox="0 0 78 77"
+          className="sq-1"
+        >
+          <g id="el-1" clip-path="url(#clip-el-1)">
+            <rect
+              id="Retângulo_12"
+              data-name="Retângulo 12"
+              width="55.404"
+              height="55.404"
+              transform="translate(30.227 -0.343) rotate(30)"
+              opacity="0.54"
+              fill="url(#linear-gradient)"
+            />
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          width="78"
+          height="77"
+          viewBox="0 0 78 77"
+          className="sq-2"
+        >
+          <g id="el-1" clip-path="url(#clip-el-1)">
+            <rect
+              id="Retângulo_12"
+              data-name="Retângulo 12"
+              width="55.404"
+              height="55.404"
+              transform="translate(30.227 -0.343) rotate(30)"
+              opacity="0.54"
+              fill="url(#linear-gradient)"
+            />
+          </g>
+        </svg> */}
         <h1>New Employee</h1>
         <div className="employee-form">
           <Input name="Employee ID" tag="id" updatePerson={updatePerson} />

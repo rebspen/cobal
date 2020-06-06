@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color:#5851ea ;
-  margin: 12vw 5em;
+  margin: 8em 8vw;
 }
 
 .team-list{
@@ -13,3 +13,8 @@
   margin-top: 6vw;
 }
 
+@media only screen and (max-width: 850px) {
+.team{
+  margin: 7em 8vw;
+}
+}

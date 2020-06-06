@@ -6,6 +6,7 @@ import AddTeam from "./views/AddTeam";
 import Nav from "./components/Nav/index";
 import Footer from "./components/Footer/index";
 import teams from "./team.json";
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   const [team, setTeam] = useState(null);
@@ -33,12 +34,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/team" render={(props)=> <Team  {...props} team={team} updatePerson={updatePerson} deletePerson={deletePerson}/>}/>
           <Route path="/new-employee" render={(props)=> <AddTeam {...props} addPerson={addPerson} />}/>
         </Switch>
         <Footer />
+      </ScrollToTop>
       </BrowserRouter>
     </div>
   );
