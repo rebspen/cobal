@@ -22,6 +22,11 @@
   border-radius: 180px;
 }
 
+.edit-image{
+  border: none;
+  outline: none;
+}
+
 .edit-team-header{
   display: flex;
   justify-content: space-between;

@@ -4,6 +4,19 @@ import "./style.css";
 const TeamBoxInput = ({ name, tag, updatePerson, data }) => {
   const [text, setText] = useState(data);
 
+  useEffect(() => {
+    if(tag === "updated"){
+      const date = new Date().toLocaleDateString();
+      console.log("date", date);
+      handleChangeAuto(date);
+    }
+  }, []);
+
+  const handleChangeAuto = async (foo) => {
+    await setText(foo);
+    updatePerson(tag, foo);
+  };
+
   const handleChange = async (e) => {
     const val = e.target.value
     await setText(e.target.value);

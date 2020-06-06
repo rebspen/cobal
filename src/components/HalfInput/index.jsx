@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
 const HalfInput = ({ name, tag, updatePerson }) => {
   const [text, setText] = useState("");
 
   const handleChange = async (e) => {
-    const val = e.target.value
+    const val = e.target.value;
     await setText(e.target.value);
     updatePerson(tag, val);
+  };
+
+  useEffect(() => {
+    const date = new Date().toLocaleDateString();
+    console.log("date", date);
+    handleChangeAuto(date);
+  }, []);
+
+  const handleChangeAuto = async (foo) => {
+    await setText(foo);
+    updatePerson(tag, foo);
   };
 
   return (

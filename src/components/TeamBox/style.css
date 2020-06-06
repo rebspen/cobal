@@ -13,7 +13,6 @@
 }
 
 .team-img{
-  background-image: url("/img-cut-landing.png");
   height: 5em;
   width: 5em;
   background-position: center;
@@ -59,7 +58,6 @@
   outline: none;
   width:30%;
 }
-
 
 @media only screen and (max-width: 873px) {
   .teambox{

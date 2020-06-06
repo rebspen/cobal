@@ -54,6 +54,17 @@ margin-right:12vw ;
   margin-bottom: 1em;
 }
 
+.socials{
+display: flex;
+justify-content: start;
+margin: 1em  0 0 -15px ;
+}
+
+.socials > img {
+width: 1.5em;
+margin: 0 0.5em;
+}
+
 svg{ 
   float:right;
   position: absolute;

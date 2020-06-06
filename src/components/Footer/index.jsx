@@ -93,7 +93,12 @@ const Footer = () => {
             kyver gutted mate spend a penny, bloke my good sir in my flat
             bleeding quaint.!
           </p>
-          <div>logos</div>
+          <div className="socials">
+          <img src="./fb.png" alt="" />
+          <img src="./tw.png" alt="" />
+          <img src="./cl.png" alt="" />
+          <img src="./lkin.png" alt="" />
+          </div>
         </div>
 
         <div className="footer-part">

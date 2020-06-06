@@ -17,13 +17,13 @@ const TeamBox = ({ data, updatePerson, deletePerson }) => {
   const leaveEditMode = () =>{
     setEditMode(false)
   }
-
+console.log(data.image)
   return (
     data && !editMode ? (
       <div className="teambox">
         <div className="team-header">
         <div className="head-info">
-          <div className="team-img"></div>
+          <div className="team-img" style={{backgroundImage: `url(${data.image})`}}></div>
           <div className="team-title">
             <h4 className= "name">
               <strong>{data.name}</strong>
@@ -32,7 +32,7 @@ const TeamBox = ({ data, updatePerson, deletePerson }) => {
           </div>
         </div>
           <div className="icons">
-           <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={20} color={"#a1a0ae"} style={{marginTop: "3px"}} /></button> 
+           <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={20} color={"#a1a0ae"} style={{marginTop: "3px", marginLeft:"-10px"}} /></button> 
             <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={25}  color={"#a1a0ae"} /></button>
           </div>
         </div>

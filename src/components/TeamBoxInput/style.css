@@ -1,10 +1,14 @@
-.team-input-main{
+.team-input-main {
   display: flex;
   width: 70%;
   font-size: smaller;
 }
 
-.team-input-body{
+.team-input-main > p {
+  margin: 0.8em 0;
+}
+
+.team-input-body {
   border: none;
   outline: none;
   width: 70%;

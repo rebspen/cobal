@@ -11,7 +11,7 @@ const Team = ({team, updatePerson, deletePerson}) => {
       <h1>Team</h1>
       <div className="team-list">
       {team.map(val => {
-        return <TeamBox data={val} updatePerson={updatePerson} deletePerson={deletePerson}/>
+        return <TeamBox key={val.id} data={val} updatePerson={updatePerson} deletePerson={deletePerson}/>
       })}
       </div>
     </div>

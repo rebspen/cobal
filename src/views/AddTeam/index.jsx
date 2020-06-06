@@ -6,9 +6,12 @@ import "./style.css";
 import Nav from "../../components/Nav";
 
 const AddTeam = ({ addPerson, history }) => {
-  const [person, setPerson] = useState({ image: "/images/bolcom.png" });
+  const [person, setPerson] = useState({
+    image:
+      "https://res.cloudinary.com/dgmvfq29c/image/upload/v1576786827/project-3-ironhack/default_picture_p9h9ls.png",
+  });
 
-  console.log("history", history);
+  console.log("person", person);
 
   const updatePerson = async (tag, value) => {
     await setPerson((prevState) => ({
