@@ -5,6 +5,7 @@
   margin: 0.5em 0;
   padding : 0 1em;
   width: 70%;
+  background-color: white;
 }
 
 .input-body{
@@ -20,6 +21,6 @@
   }
 
   .input-body{
-    width: 60%;
+    width: 50%;
   }
 }

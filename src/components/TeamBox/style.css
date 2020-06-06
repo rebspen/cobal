@@ -6,6 +6,7 @@
   margin: 1.5%;
   width: 47%;
   color: #a1a0ae;
+  background-color: white;
 }
 
 .name{
@@ -63,6 +64,12 @@
   .teambox{
     width:97%;
     min-width: 140px;
+  }
+
+  .team-img{
+    height: 3em;
+    width: 3em;
+    margin-top: 2em;
   }
   .icons{
     width:20%;

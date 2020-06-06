@@ -20,9 +20,13 @@
   flex-direction: column;
   text-align: center;
   font-size: 0.8em;
-  margin: 4em 0;
+  padding: 4em 0;
   color: #6f7982;
   line-height: 2;
+  background-image: url("/home-back2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 .landing {
   width: 40%;
@@ -62,11 +66,7 @@ h2 {
   margin: 3em 0 0.7em 0;
 }
 
-.circle{
-  top: 170%;
-  left: 88%;
-  z-index: -1;
-}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -77,6 +77,10 @@ h2 {
     flex-direction: column;
     padding : 0;
     align-items: center ;
+  }
+
+  .main-home{
+    background-position: 50% 10%
   }
   
   .landing {

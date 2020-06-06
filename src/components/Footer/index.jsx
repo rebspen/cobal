@@ -5,7 +5,7 @@ import "./styles.css";
 const Footer = () => {
   return (
     <div className="footer">
-      {/* <svg
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 1920 501"
@@ -41,6 +41,7 @@ const Footer = () => {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 1840 543"
+        className="svg-footer"
       >
         <g id="circle-footer" clip-path="url(#clip-circle-footer)">
           <g id="Footer" transform="translate(-79 -7713)">
@@ -84,7 +85,7 @@ const Footer = () => {
             </g>
           </g>
         </g>
-      </svg> */}
+      </svg>
       <div className="footer-top">
         <div className="footer-part lead">
           <img src="./logo.png" alt="" />

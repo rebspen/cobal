@@ -52,6 +52,7 @@ margin-right:12vw ;
   font-size: 0.7em;
   margin-top: 3em;
   margin-bottom: 1em;
+  z-index: 1;
 }
 
 .socials{
@@ -65,7 +66,7 @@ width: 1.5em;
 margin: 0 0.5em;
 }
 
-svg{ 
+.svg-footer{ 
   float:right;
   position: absolute;
 }
@@ -80,6 +81,10 @@ svg{
 
   .footer{
     height: auto;
+  }
+
+  .svg-footer{ 
+    visibility: hidden;
   }
 
   .footer-top{

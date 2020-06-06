@@ -3,18 +3,22 @@
   flex-direction: column;
   align-items: center;
   color:#5851ea ;
-  margin: 8em 8vw;
+  padding: 10em 8vw;
+  background-image: url("/team-back3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .team-list{
   width:100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6vw;
+  margin: 6vw 0;
 }
 
 @media only screen and (max-width: 850px) {
 .team{
-  margin: 7em 8vw;
+  padding: 7em 8vw;
 }
 }
