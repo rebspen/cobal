@@ -27,6 +27,10 @@
   outline: none;
 }
 
+.img-edit-collection{
+  display: flex;
+}
+
 .edit-team-header{
   display: flex;
   justify-content: space-between;

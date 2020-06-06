@@ -46,28 +46,31 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
       <div className="edit-teambox">
         <div className="edit-team-header">
           <div className="edit-head-info">
-            <button className="edit-image" >
+            <div className="edit-team-title">
+            <div className="img-edit-collection">
               <div
                 className="edit-team-img"
                 style={{ backgroundImage: `url(${data.image})`}}
               ></div>
+               <button className="edit-image" >
               <input
                 type="file"
                 name="file"
                 onChange={handleFileChange}
               />
-              {loading && <small>loading...</small>}
+              {loading && <small>...loading...</small>}
             </button>
-            <div className="edit-team-title">
+            </div>
               <TeamBoxInput
                 name="Name:  "
                 tag="name"
                 updatePerson={updatePersonHere}
                 data={person.name}
               />
-              <p>Employee ID: {person.id}</p>
+              <p style={{fontSize:"smaller"}}>Employee ID: {person.id}</p>
             </div>
           </div>
+         
           <div className="icons">
             <button className="hidden" onClick={() => updatePersonGlobally()}>
               <GoCheck
