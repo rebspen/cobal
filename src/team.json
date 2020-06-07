@@ -26,7 +26,27 @@
     "address": "13763 Hawthorne Boulevard at 137th Street",
     "status": "part-time",
     "position": "????",
-    "created": "21st October 1994",
+    "created": "15st October 1994",
+    "updated":"14th May 2020"
+  },
+  {"name": "Butch Coolidge",
+    "image": "https://res.cloudinary.com/dookjtutx/image/upload/v1591520230/butch_tpu3vw.jpg",
+    "id": "5376784367",
+    "birthdate":"31/03/1992" ,
+    "address": "LA",
+    "status": "part-time",
+    "position": "Boxer",
+    "created": "20st October 1998",
+    "updated":"14th May 2020"
+  },
+  {"name": "Marsellus Wallace",
+    "image": "https://res.cloudinary.com/dookjtutx/image/upload/v1591520232/marsellus_uopdz2.jpg",
+    "id": "7355927567",
+    "birthdate":"31/03/1992" ,
+    "address": "13763 Hawthorne Boulevard at 137th Street",
+    "status": "part-time",
+    "position": "Gang Boss",
+    "created": "9th March 2000",
     "updated":"14th May 2020"
   }
 
