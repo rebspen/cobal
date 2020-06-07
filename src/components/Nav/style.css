@@ -1,11 +1,10 @@
 .nav {
-  height: 12vh;
   width: 100%;
   background-color: #5851ea;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 5vw 0 12vw;
+  padding: 0.2em 5vw 0.2em 12vw;
 }
 
 .nav > .nav-header {
@@ -19,20 +18,17 @@
 
 .branding {
   width: 6em;
-  margin-top: 0.5em;
   
 }
 
 .nav > .nav-btn {
   display: none;
-  margin-top: 0.6em;
 }
 
 .nav > .nav-links {
   display: inline;
   float: right;
   font-size: 13px;
-  margin-top: 0.7em;
   margin-right: 6vw ;
 }
 
@@ -57,6 +53,7 @@
     position: absolute;
     right: 0px;
     top: 0px;
+    margin: 0.15em 0.4em;
   }
   .nav > .nav-btn > label {
     display: inline-block;

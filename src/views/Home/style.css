@@ -26,7 +26,7 @@
   background-image: url("/home-back2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position: 35% 30%
 }
 .landing {
   width: 40%;
@@ -64,6 +64,13 @@ h2 {
 .single-line{
   align-self: center;
   margin: 3em 0 0.7em 0;
+}
+
+
+@media only screen and (max-width: 919px){
+  .header-img{
+    background-position: 35% 30%
+  }
 }
 
 

@@ -77,7 +77,7 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
               <GoCheck
                 color={"#a1a0ae"}
                 size={30}
-                style={{ marginLeft: "1.5em" }}
+                className="tick"
               />
             </button>
           </div>
