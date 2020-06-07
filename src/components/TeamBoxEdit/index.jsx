@@ -37,6 +37,7 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
       }
     )
     const file = await res.json()
+    console.log("got pic back", file.secure_url )
     await updatePersonHere("image", file.secure_url)
     setLoading(false)
   }
