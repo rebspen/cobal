@@ -9,6 +9,7 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
   const [person, setPerson] = useState(data);
   const [loading, setLoading] = useState(false);
 
+  //updates local state on change
   const updatePersonHere = async (tag, value) => {
     await setPerson((prevState) => ({
       ...prevState,
@@ -16,12 +17,13 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
     }));
   };
 
+  //updates the state held on App.jsx using passsed down method updatePerson()
   const updatePersonGlobally = async () => {
-    console.log("now we are at person", person);
     await updatePerson(person);
     leaveEditMode();
   };
 
+  //updates image using cloudinary api
   const handleFileChange = async (e) => {
     e.preventDefault();
     setLoading(true)

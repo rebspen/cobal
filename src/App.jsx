@@ -10,14 +10,17 @@ import ScrollToTop from "./components/ScrollToTop"
 function App() {
   const [team, setTeam] = useState(null);
 
+  //sets inital team array from teams.json
   useEffect(() => {
     setTeam(teams);
   },[]);
 
+  //add a new person object to the array
   const addPerson = (person) => {
     setTeam(team => [...team, person]);
   };
 
+  //replace the person in array specified with a new object
   const updatePerson = (person) => {
    console.log("app person update", person)
    setTeam(team.map((teammember) => {
@@ -25,11 +28,11 @@ function App() {
   }));
   };
 
+  //delete team member based on id
   const deletePerson = (person) => {
     setTeam(team.filter((teammember) => teammember.id !== person.id));
    };
 
-  console.log("team", team)
   return (
     <div>
       <BrowserRouter>

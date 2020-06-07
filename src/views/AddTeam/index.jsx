@@ -11,8 +11,7 @@ const AddTeam = ({ addPerson, history }) => {
       "https://res.cloudinary.com/dgmvfq29c/image/upload/v1576786827/project-3-ironhack/default_picture_p9h9ls.png",
   });
 
-  console.log("person", person);
-
+  //updates local state here - this is called from the Input component
   const updatePerson = async (tag, value) => {
     await setPerson((prevState) => ({
       ...prevState,
@@ -20,6 +19,7 @@ const AddTeam = ({ addPerson, history }) => {
     }));
   };
 
+   //adds a new team member to the arry in the App.jsx state the redirects to team page
   const submit = async () => {
     await addPerson(person);
     history.goBack();
@@ -29,6 +29,7 @@ const AddTeam = ({ addPerson, history }) => {
     <Fragment>
       <Nav button={true} colour={"#5851ea"} />
       <div className="add-employee">
+        {/* below are the box svg images */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -91,6 +92,7 @@ const AddTeam = ({ addPerson, history }) => {
             />
           </g>
         </svg>
+        {/* above are the box svg images */}
         <h1>New Employee</h1>
         <div className="employee-form">
           <Input name="Employee ID" tag="id" updatePerson={updatePerson} />

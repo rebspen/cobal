@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
+// this is used in the botton of the add employee form for created and edited 
+
 const HalfInput = ({ name, tag, updatePerson }) => {
   const [text, setText] = useState("");
+  
+  useEffect(() => {
+    //automatically adds the dates to the form and updates the state
+    const date = new Date().toLocaleDateString();
+    handleChangeAuto(date);
+  }, []);
 
   const handleChange = async (e) => {
     const val = e.target.value;
@@ -10,11 +18,6 @@ const HalfInput = ({ name, tag, updatePerson }) => {
     updatePerson(tag, val);
   };
 
-  useEffect(() => {
-    const date = new Date().toLocaleDateString();
-    console.log("date", date);
-    handleChangeAuto(date);
-  }, []);
 
   const handleChangeAuto = async (foo) => {
     await setText(foo);

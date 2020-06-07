@@ -5,6 +5,7 @@ import "./styles.css";
 const Footer = () => {
   return (
     <div className="footer">
+    {/* below these are svg images of the curve and dots */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -86,6 +87,7 @@ const Footer = () => {
           </g>
         </g>
       </svg>
+        {/* above ... these are svg images of the curve and dots */}
       <div className="footer-top">
         <div className="footer-part lead">
           <img style = {{width: "6em"}} src="./logo.png" alt="" />

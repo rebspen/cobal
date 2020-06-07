@@ -7,17 +7,12 @@ import TeamBoxEdit from '../TeamBoxEdit'
 const TeamBox = ({ data, updatePerson, deletePerson }) => {
   const [editMode, setEditMode] = useState(false)
 
-  // const updatePerson = async (tag, value) => {
-  //   await setPerson((prevState) => ({
-  //     ...prevState,
-  //     [tag]: value,
-  //   }));
-  // };
-
   const leaveEditMode = () =>{
     setEditMode(false)
   }
-console.log(data.image)
+
+//if edit mode is false it will render the below component else TeamBoxEdit component
+
   return (
     data && !editMode ? (
       <div className="teambox">
@@ -33,7 +28,7 @@ console.log(data.image)
         </div>
           <div className="icons">
            <button className="hidden" onClick={()=> setEditMode(true)}><GoPencil size={20} color={"#a1a0ae"} style={{marginTop: "3px", marginLeft:"-10px"}} /></button> 
-            <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={25}  color={"#a1a0ae"} style={{marginLeft:"-10px"}} /></button>
+            <button className="hidden" onClick={()=> deletePerson(data)}><GoX size={25}  color={"#a1a0ae"} style={{marginLeft:"-13px"}} /></button>
           </div>
         </div>
         <div className="team-details">

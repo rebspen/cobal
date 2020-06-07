@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//default shape of button that can be changed by props  "primary" & "small"
 export default styled.button`
   background-color: ${(props) => (props.primary ? "#5851ea" : "white")};
   border: none;

@@ -5,6 +5,7 @@ const Input = ({ name, tag, updatePerson }) => {
   const [text, setText] = useState("");
 
   useEffect(() => {
+    // automatically adds a template id for the team member
     if (tag === "id") {
       const num = Math.floor(Math.random() * 100000000);
       handleChangeAuto(num.toString())
@@ -17,9 +18,9 @@ const Input = ({ name, tag, updatePerson }) => {
   };
 
   const handleChange = async (e) => {
-    console.log("ETV", e.target.value);
     const val = e.target.value;
     await setText(e.target.value);
+    //this updates the main person local state property in addTeam view
     updatePerson(tag, val);
   };
 

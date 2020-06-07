@@ -4,7 +4,9 @@ import "./style.css";
 const TeamBoxInput = ({ name, tag, updatePerson, data }) => {
   const [text, setText] = useState(data);
 
+
   useEffect(() => {
+    // automatically updates edit date
     if(tag === "updated"){
       const date = new Date().toLocaleDateString();
       console.log("date", date);
@@ -17,6 +19,7 @@ const TeamBoxInput = ({ name, tag, updatePerson, data }) => {
     updatePerson(tag, foo);
   };
 
+  // updates person state in the TeamBoxEdit component
   const handleChange = async (e) => {
     const val = e.target.value
     await setText(e.target.value);
