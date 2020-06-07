@@ -50,6 +50,7 @@
 }
 
 .tick{
+  margin-top: 1em;
   margin-left: 100%;
 }
 
@@ -59,6 +60,20 @@
     width:97%;
     min-width: 140px;
   }
+
+  .edit-team-title > p{
+    margin-top: 0;
+  }
+
+  .img-edit-collection{
+    flex-direction: column;
+  }
+
+  .edit-team-img{
+    width: 4em;
+    height: 4em;
+  }
+
 
   .tick{
     margin: none;

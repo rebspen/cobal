@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./views/Home";
 import Team from "./views/Team";
 import AddTeam from "./views/AddTeam";
-import Nav from "./components/Nav/index";
 import Footer from "./components/Footer/index";
 import teams from "./team.json";
 import ScrollToTop from "./components/ScrollToTop"
