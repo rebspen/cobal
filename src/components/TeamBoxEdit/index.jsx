@@ -30,7 +30,7 @@ const TeamBoxEdit = ({ data, updatePerson, leaveEditMode }) => {
     data.append('file', files[0])
     data.append('upload_preset', "darwin")
     const res = await fetch(
-      'http://api.cloudinary.com/v1_1/dookjtutx/image/upload',
+      'https://api.cloudinary.com/v1_1/dookjtutx/image/upload',
       {
         method: 'POST',
         body: data
