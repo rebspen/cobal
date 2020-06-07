@@ -4,10 +4,16 @@
   align-items: center;
   color:#5851ea ;
   padding: 10em 8vw;
-  background-image: url("/team-back3.png");
+  background-image: url("/back-team-plain.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.sq-3{
+  position: absolute;
+  top : 260%;
+  left : 30%;
 }
 
 .team-list{

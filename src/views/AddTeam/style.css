@@ -4,7 +4,7 @@
   align-items: center;
   color:#5851ea;
   padding: 8em 5em;
-  background-image: url("/addteam-back2.png");
+  background-image: url("/back-addteam-plain.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +27,19 @@
   margin-bottom: 6vw;
 }
 
+.sq-1{
+  position: absolute;
+  top: 20%;
+  left:10%;
+}
+
+.sq-2{
+  position: absolute;
+  top: 30%;
+  left:85%;
+  transform: rotate(210deg);
+}
+
 @media only screen and (max-width: 850px) {
   .half-size{
     flex-direction: column;
@@ -34,6 +47,7 @@
     justify-content: center;
     width: 78%;
   }
+
   .add-employee{
     padding: 7em 0;
     background-position: 50% 10%

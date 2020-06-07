@@ -88,7 +88,7 @@ const Footer = () => {
       </svg>
       <div className="footer-top">
         <div className="footer-part lead">
-          <img src="./logo.png" alt="" />
+          <img style = {{width: "6em"}} src="./logo.png" alt="" />
           <p>
             Me old mucker Harry don't get shirty with me he nicked it up the
             kyver gutted mate spend a penny, bloke my good sir in my flat
